@@ -9,7 +9,7 @@ MegaManEffect was written while I attended the ADHOC/MacHack conference in 2004 
 For awhile after various personal site redesigns,  the MegaManEffect download page had disappeared. After many, many emails in 2007 I finally put it back online and even upgraded it to a Universal Binary so it runs great on Intel Macs. 
 
 * [Download the MegaManEffect Application](https://github.com/zorn/MegaManEffect/releases/download/1.1/MegaManEffect.app.zip)
-* [See MegaManEffect demoed on Attack of the Show](megamention.mov)
+* [See MegaManEffect demoed on Attack of the Show](http://www.youtube.com/watch?v=U6q3vfQKTJI)
 * [See the original MegaMan 2 game in action](http://www.youtube.com/watch?v=eGDBXnWpvmE) 
 
 The source for MegaManEffect is available under a BSD license.
