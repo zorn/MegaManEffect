@@ -10,7 +10,7 @@ For awhile after various personal site redesigns,  the MegaManEffect download pa
 
 * [Download the MegaManEffect Application](https://github.com/zorn/MegaManEffect/releases/download/1.1/MegaManEffect.app.zip)
 * [See MegaManEffect demoed on Attack of the Show](megamention.mov)
-* [See the original MegaMan 2 game in action](mmsample.mov) 
+* [See the original MegaMan 2 game in action](http://www.youtube.com/watch?v=eGDBXnWpvmE) 
 
 The source for MegaManEffect is available under a BSD license.
 
