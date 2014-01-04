@@ -1,0 +1,3 @@
+* When the effect plays for the first time the screen in momentarily white. I suspect the movie is loading into some buffer cause it doesn't happen on subsequent launches.
+* If the user clicks the screen while the effect is playing the blue bar can disappear.
+* We are using NSMovie which is depreciated. Not sure when but it might not work in 10.5.
