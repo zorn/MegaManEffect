@@ -3,388 +3,344 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A14EFB70C3720C200FD1765 /* BUGS in Resources */ = {isa = PBXBuildFile; fileRef = 1A14EFB60C3720C200FD1765 /* BUGS */; };
-		1A53FB1E06B13BA0002DE332 /* effect_sound.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 1A53FB1D06B13BA0002DE332 /* effect_sound.aiff */; };
-		1A67A27706B20683002A4251 /* stars2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 1A67A27606B20683002A4251 /* stars2.mov */; };
-		1A97FD5206B02820006FF1B2 /* AppController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A97FD5006B02820006FF1B2 /* AppController.h */; };
-		1A97FD5306B02820006FF1B2 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A97FD5106B02820006FF1B2 /* AppController.m */; };
-		1ACF090D06C2CB0300F373C1 /* Mega Man.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1ACF090C06C2CB0300F373C1 /* Mega Man.icns */; };
-		1AF3856D06B567280073F6EC /* UKBorderlessWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF3856B06B567280073F6EC /* UKBorderlessWindow.h */; };
-		1AF3856E06B567280073F6EC /* UKBorderlessWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3856C06B567280073F6EC /* UKBorderlessWindow.m */; };
-		1AF385BC06B572490073F6EC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF385BB06B572490073F6EC /* Credits.rtf */; };
-		8D1107280486CEB800E47090 /* MegaManEffect_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* MegaManEffect_Prefix.pch */; };
-		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
-		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
-		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		588979F1187E48E000EBF40D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E4530F187E09C900ECEAD3 /* main.m */; };
+		588979F2187E497C00EBF40D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 58E4533B187E0C8300ECEAD3 /* Credits.rtf */; };
+		588979F3187E4B5100EBF40D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 588979EB187E45D000EBF40D /* MainMenu.xib */; };
+		58E45304187E09C900ECEAD3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E45303187E09C900ECEAD3 /* Cocoa.framework */; };
+		58E4530E187E09C900ECEAD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58E4530C187E09C900ECEAD3 /* InfoPlist.strings */; };
+		58E45317187E09C900ECEAD3 /* MainAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E45316187E09C900ECEAD3 /* MainAppDelegate.m */; };
+		58E4531C187E09C900ECEAD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58E4531B187E09C900ECEAD3 /* Images.xcassets */; };
+		58E45339187E0B1B00ECEAD3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E45337187E0B1B00ECEAD3 /* AVFoundation.framework */; };
+		58E4533A187E0B1B00ECEAD3 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E45338187E0B1B00ECEAD3 /* AVKit.framework */; };
+		58E4533F187E0C8300ECEAD3 /* effect_sound.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 58E4533C187E0C8300ECEAD3 /* effect_sound.aiff */; };
+		58E45340187E0C8300ECEAD3 /* stars2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 58E4533D187E0C8300ECEAD3 /* stars2.mov */; };
+		58E45342187E0EFE00ECEAD3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E45341187E0EFE00ECEAD3 /* CoreMedia.framework */; };
+		58E45345187E100000ECEAD3 /* UKBorderlessWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E45344187E100000ECEAD3 /* UKBorderlessWindow.m */; };
+		58E45347187E27E700ECEAD3 /* Mega Man.icns in Resources */ = {isa = PBXBuildFile; fileRef = 58E45346187E27E700ECEAD3 /* Mega Man.icns */; };
+		58E4534D187E3A9300ECEAD3 /* strip.png in Resources */ = {isa = PBXBuildFile; fileRef = 58E4534C187E3A9300ECEAD3 /* strip.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		1A14EFB60C3720C200FD1765 /* BUGS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUGS; sourceTree = "<group>"; };
-		1A53FB1D06B13BA0002DE332 /* effect_sound.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = effect_sound.aiff; sourceTree = "<group>"; };
-		1A67A27606B20683002A4251 /* stars2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = stars2.mov; sourceTree = "<group>"; };
-		1A97FD5006B02820006FF1B2 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
-		1A97FD5106B02820006FF1B2 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		1ACF090C06C2CB0300F373C1 /* Mega Man.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Mega Man.icns"; sourceTree = "<group>"; };
-		1AF3856B06B567280073F6EC /* UKBorderlessWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UKBorderlessWindow.h; sourceTree = "<group>"; };
-		1AF3856C06B567280073F6EC /* UKBorderlessWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UKBorderlessWindow.m; sourceTree = "<group>"; };
-		1AF385BB06B572490073F6EC /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32CA4F630368D1EE00C91783 /* MegaManEffect_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MegaManEffect_Prefix.pch; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* MegaManEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaManEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		588979EC187E45D000EBF40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		58E45300187E09C900ECEAD3 /* MegaManEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaManEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58E45303187E09C900ECEAD3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		58E45306187E09C900ECEAD3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		58E45307187E09C900ECEAD3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		58E45308187E09C900ECEAD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		58E4530B187E09C900ECEAD3 /* MegaManEffect-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MegaManEffect-Info.plist"; sourceTree = "<group>"; };
+		58E4530D187E09C900ECEAD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58E4530F187E09C900ECEAD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58E45311187E09C900ECEAD3 /* MegaManEffect-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MegaManEffect-Prefix.pch"; sourceTree = "<group>"; };
+		58E45315187E09C900ECEAD3 /* MainAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainAppDelegate.h; sourceTree = "<group>"; };
+		58E45316187E09C900ECEAD3 /* MainAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainAppDelegate.m; sourceTree = "<group>"; };
+		58E4531B187E09C900ECEAD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		58E45337187E0B1B00ECEAD3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		58E45338187E0B1B00ECEAD3 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		58E4533B187E0C8300ECEAD3 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		58E4533C187E0C8300ECEAD3 /* effect_sound.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = effect_sound.aiff; sourceTree = "<group>"; };
+		58E4533D187E0C8300ECEAD3 /* stars2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = stars2.mov; sourceTree = "<group>"; };
+		58E45341187E0EFE00ECEAD3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		58E45343187E100000ECEAD3 /* UKBorderlessWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKBorderlessWindow.h; sourceTree = "<group>"; };
+		58E45344187E100000ECEAD3 /* UKBorderlessWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKBorderlessWindow.m; sourceTree = "<group>"; };
+		58E45346187E27E700ECEAD3 /* Mega Man.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Mega Man.icns"; sourceTree = "<group>"; };
+		58E4534C187E3A9300ECEAD3 /* strip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strip.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8D11072E0486CEB800E47090 /* Frameworks */ = {
+		58E452FD187E09C900ECEAD3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				58E45342187E0EFE00ECEAD3 /* CoreMedia.framework in Frameworks */,
+				58E45339187E0B1B00ECEAD3 /* AVFoundation.framework in Frameworks */,
+				58E4533A187E0B1B00ECEAD3 /* AVKit.framework in Frameworks */,
+				58E45304187E09C900ECEAD3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Classes */ = {
+		58E452F7187E09C900ECEAD3 = {
 			isa = PBXGroup;
 			children = (
-				1AF3856B06B567280073F6EC /* UKBorderlessWindow.h */,
-				1AF3856C06B567280073F6EC /* UKBorderlessWindow.m */,
-				1A97FD5006B02820006FF1B2 /* AppController.h */,
-				1A97FD5106B02820006FF1B2 /* AppController.m */,
+				58E45343187E100000ECEAD3 /* UKBorderlessWindow.h */,
+				58E45344187E100000ECEAD3 /* UKBorderlessWindow.m */,
+				58E45315187E09C900ECEAD3 /* MainAppDelegate.h */,
+				58E45316187E09C900ECEAD3 /* MainAppDelegate.m */,
+				58E4530F187E09C900ECEAD3 /* main.m */,
+				588979EB187E45D000EBF40D /* MainMenu.xib */,
+				58E4531B187E09C900ECEAD3 /* Images.xcassets */,
+				58E4530A187E09C900ECEAD3 /* Supporting Files */,
+				58E45302187E09C900ECEAD3 /* Frameworks */,
+				58E45301187E09C900ECEAD3 /* Products */,
 			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
-		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+		58E45301187E09C900ECEAD3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
-			);
-			name = "Linked Frameworks";
-			sourceTree = "<group>";
-		};
-		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
-				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		19C28FACFE9D520D11CA2CBB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8D1107320486CEB800E47090 /* MegaManEffect.app */,
+				58E45300187E09C900ECEAD3 /* MegaManEffect.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* Mega Man Effect */ = {
+		58E45302187E09C900ECEAD3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1A14EFB60C3720C200FD1765 /* BUGS */,
-				080E96DDFE201D6D7F000001 /* Classes */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
-				29B97323FDCFA39411CA2CEA /* Frameworks */,
-				19C28FACFE9D520D11CA2CBB /* Products */,
-			);
-			name = "Mega Man Effect";
-			sourceTree = "<group>";
-		};
-		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				32CA4F630368D1EE00C91783 /* MegaManEffect_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
-			);
-			name = "Other Sources";
-			sourceTree = "<group>";
-		};
-		29B97317FDCFA39411CA2CEA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1A67A27606B20683002A4251 /* stars2.mov */,
-				1ACF090C06C2CB0300F373C1 /* Mega Man.icns */,
-				1A53FB1D06B13BA0002DE332 /* effect_sound.aiff */,
-				8D1107310486CEB800E47090 /* Info.plist */,
-				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
-				1AF385BB06B572490073F6EC /* Credits.rtf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
-				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				58E45341187E0EFE00ECEAD3 /* CoreMedia.framework */,
+				58E45337187E0B1B00ECEAD3 /* AVFoundation.framework */,
+				58E45338187E0B1B00ECEAD3 /* AVKit.framework */,
+				58E45303187E09C900ECEAD3 /* Cocoa.framework */,
+				58E45305187E09C900ECEAD3 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		58E45305187E09C900ECEAD3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58E45306187E09C900ECEAD3 /* AppKit.framework */,
+				58E45307187E09C900ECEAD3 /* CoreData.framework */,
+				58E45308187E09C900ECEAD3 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		58E4530A187E09C900ECEAD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58E4534C187E3A9300ECEAD3 /* strip.png */,
+				58E45346187E27E700ECEAD3 /* Mega Man.icns */,
+				58E4533B187E0C8300ECEAD3 /* Credits.rtf */,
+				58E4533C187E0C8300ECEAD3 /* effect_sound.aiff */,
+				58E4533D187E0C8300ECEAD3 /* stars2.mov */,
+				58E4530B187E09C900ECEAD3 /* MegaManEffect-Info.plist */,
+				58E4530C187E09C900ECEAD3 /* InfoPlist.strings */,
+				58E45311187E09C900ECEAD3 /* MegaManEffect-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		8D1107270486CEB800E47090 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D1107280486CEB800E47090 /* MegaManEffect_Prefix.pch in Headers */,
-				1A97FD5206B02820006FF1B2 /* AppController.h in Headers */,
-				1AF3856D06B567280073F6EC /* UKBorderlessWindow.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* MegaManEffect */ = {
+		58E452FF187E09C900ECEAD3 /* MegaManEffect */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1AB012CA0A2AB08A00EA291F /* Build configuration list for PBXNativeTarget "MegaManEffect" */;
+			buildConfigurationList = 58E45331187E09C900ECEAD3 /* Build configuration list for PBXNativeTarget "MegaManEffect" */;
 			buildPhases = (
-				8D1107270486CEB800E47090 /* Headers */,
-				8D1107290486CEB800E47090 /* Resources */,
-				8D11072C0486CEB800E47090 /* Sources */,
-				8D11072E0486CEB800E47090 /* Frameworks */,
+				58E452FC187E09C900ECEAD3 /* Sources */,
+				58E452FD187E09C900ECEAD3 /* Frameworks */,
+				58E452FE187E09C900ECEAD3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MegaManEffect;
-			productInstallPath = "$(HOME)/Applications";
 			productName = MegaManEffect;
-			productReference = 8D1107320486CEB800E47090 /* MegaManEffect.app */;
+			productReference = 58E45300187E09C900ECEAD3 /* MegaManEffect.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		29B97313FDCFA39411CA2CEA /* Project object */ = {
+		58E452F8187E09C900ECEAD3 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 1AB012CE0A2AB08A00EA291F /* Build configuration list for PBXProject "MegaManEffect" */;
-			hasScannedForEncodings = 1;
-			mainGroup = 29B97314FDCFA39411CA2CEA /* Mega Man Effect */;
+			attributes = {
+				CLASSPREFIX = com.dandyspaniels;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Robert Smith";
+			};
+			buildConfigurationList = 58E452FB187E09C900ECEAD3 /* Build configuration list for PBXProject "MegaManEffect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58E452F7187E09C900ECEAD3;
+			productRefGroup = 58E45301187E09C900ECEAD3 /* Products */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* MegaManEffect */,
+				58E452FF187E09C900ECEAD3 /* MegaManEffect */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8D1107290486CEB800E47090 /* Resources */ = {
+		58E452FE187E09C900ECEAD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
-				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				1A53FB1E06B13BA0002DE332 /* effect_sound.aiff in Resources */,
-				1A67A27706B20683002A4251 /* stars2.mov in Resources */,
-				1AF385BC06B572490073F6EC /* Credits.rtf in Resources */,
-				1ACF090D06C2CB0300F373C1 /* Mega Man.icns in Resources */,
-				1A14EFB70C3720C200FD1765 /* BUGS in Resources */,
+				588979F3187E4B5100EBF40D /* MainMenu.xib in Resources */,
+				588979F2187E497C00EBF40D /* Credits.rtf in Resources */,
+				58E45347187E27E700ECEAD3 /* Mega Man.icns in Resources */,
+				58E45340187E0C8300ECEAD3 /* stars2.mov in Resources */,
+				58E4530E187E09C900ECEAD3 /* InfoPlist.strings in Resources */,
+				58E4531C187E09C900ECEAD3 /* Images.xcassets in Resources */,
+				58E4533F187E0C8300ECEAD3 /* effect_sound.aiff in Resources */,
+				58E4534D187E3A9300ECEAD3 /* strip.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8D11072C0486CEB800E47090 /* Sources */ = {
+		58E452FC187E09C900ECEAD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				1A97FD5306B02820006FF1B2 /* AppController.m in Sources */,
-				1AF3856E06B567280073F6EC /* UKBorderlessWindow.m in Sources */,
+				588979F1187E48E000EBF40D /* main.m in Sources */,
+				58E45317187E09C900ECEAD3 /* MainAppDelegate.m in Sources */,
+				58E45345187E100000ECEAD3 /* UKBorderlessWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+		588979EB187E45D000EBF40D /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C165DFE840E0CC02AAC07 /* English */,
+				588979EC187E45D000EBF40D /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
-		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+		58E4530C187E09C900ECEAD3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29B97319FDCFA39411CA2CEA /* English */,
+				58E4530D187E09C900ECEAD3 /* en */,
 			);
-			name = MainMenu.nib;
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1AB012CB0A2AB08A00EA291F /* Development */ = {
+		58E4532F187E09C900ECEAD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUGGING_SYMBOLS = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_ENABLE_TRIGRAPHS = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = MegaManEffect_Prefix.pch;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "";
-				OPTIMIZATION_CFLAGS = "-O0";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = MegaManEffect;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
 				);
-				WRAPPER_EXTENSION = app;
-				ZERO_LINK = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 			};
-			name = Development;
+			name = Debug;
 		};
-		1AB012CC0A2AB08A00EA291F /* Deployment */ = {
+		58E45330187E09C900ECEAD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_TRIGRAPHS = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = MegaManEffect_Prefix.pch;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = MegaManEffect;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = app;
-				ZERO_LINK = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
 			};
-			name = Deployment;
+			name = Release;
 		};
-		1AB012CD0A2AB08A00EA291F /* Default */ = {
+		58E45332187E09C900ECEAD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_TRIGRAPHS = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = MegaManEffect_Prefix.pch;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = MegaManEffect;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
+				GCC_PREFIX_HEADER = "MegaManEffect-Prefix.pch";
+				INFOPLIST_FILE = "MegaManEffect-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
-			name = Default;
+			name = Debug;
 		};
-		1AB012CF0A2AB08A00EA291F /* Development */ = {
+		58E45333187E09C900ECEAD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MegaManEffect-Prefix.pch";
+				INFOPLIST_FILE = "MegaManEffect-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
 			};
-			name = Development;
-		};
-		1AB012D00A2AB08A00EA291F /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.3;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
-			};
-			name = Deployment;
-		};
-		1AB012D10A2AB08A00EA291F /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
-			};
-			name = Default;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1AB012CA0A2AB08A00EA291F /* Build configuration list for PBXNativeTarget "MegaManEffect" */ = {
+		58E452FB187E09C900ECEAD3 /* Build configuration list for PBXProject "MegaManEffect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AB012CB0A2AB08A00EA291F /* Development */,
-				1AB012CC0A2AB08A00EA291F /* Deployment */,
-				1AB012CD0A2AB08A00EA291F /* Default */,
+				58E4532F187E09C900ECEAD3 /* Debug */,
+				58E45330187E09C900ECEAD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
-		1AB012CE0A2AB08A00EA291F /* Build configuration list for PBXProject "MegaManEffect" */ = {
+		58E45331187E09C900ECEAD3 /* Build configuration list for PBXNativeTarget "MegaManEffect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AB012CF0A2AB08A00EA291F /* Development */,
-				1AB012D00A2AB08A00EA291F /* Deployment */,
-				1AB012D10A2AB08A00EA291F /* Default */,
+				58E45332187E09C900ECEAD3 /* Debug */,
+				58E45333187E09C900ECEAD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+	rootObject = 58E452F8187E09C900ECEAD3 /* Project object */;
 }
