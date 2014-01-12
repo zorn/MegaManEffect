@@ -1,4 +1,9 @@
 #import "MainAppDelegate.h"
+#import <AVFoundation/AVFoundation.h>
+
+@interface MainAppDelegate ()
+@property AVPlayerLayer *playerLayer;
+@end
 
 @implementation MainAppDelegate
 
@@ -14,6 +19,41 @@
                                     defer:NO];
 	
 	return self;
+}
+
+- (void)setupAnimationWindowWithHidden:(BOOL)hidden
+{
+    CGFloat alphaValue = 1.0;
+    if (hidden) {
+        alphaValue = 0.0;
+    }
+    
+    // show animation window
+    [realAnimationWindow setLevel:NSScreenSaverWindowLevel];
+    
+    [realAnimationWindow setFrame:[[[NSScreen screens] objectAtIndex:0] frame] display:YES];
+    
+    [strip setLevel:NSScreenSaverWindowLevel];
+    [strip orderWindow:NSWindowAbove relativeTo:[[stars window] windowNumber]];
+    
+    // create a
+    NSRect stripRect = NSMakeRect(0.0, (NSHeight([[[NSScreen screens] objectAtIndex:0] frame]) / 2 - 103.0), NSWidth([[[NSScreen screens] objectAtIndex:0] frame]), 206.0);
+    
+    [strip setFrame:stripRect display:YES];
+    
+    NSRect newFrame = NSMakeRect(0.0, 0.0,
+                                 NSWidth([[[NSScreen screens] objectAtIndex:0] frame]),
+                                 NSHeight([[[NSScreen screens] objectAtIndex:0] frame]));
+    [stars setFrame:newFrame];
+    
+    // update video layer
+    [self.playerLayer setFrame:newFrame];
+    
+    [realAnimationWindow makeKeyAndOrderFront:self];
+    [realAnimationWindow setAlphaValue:alphaValue];
+    
+    [strip makeKeyAndOrderFront:self];
+    [strip setAlphaValue:alphaValue];
 }
 
 - (IBAction)runEffect:(id)sender
@@ -34,34 +74,15 @@
 				
 				[iconView setImage: icon];
 				
-				// show animation window
-				[realAnimationWindow setLevel:NSScreenSaverWindowLevel];
-                
-				[realAnimationWindow setFrame:[[[NSScreen screens] objectAtIndex:0] frame] display:YES];
-				[realAnimationWindow makeKeyAndOrderFront:self];
-				[realAnimationWindow setAlphaValue:1.0];
-                
-				[strip setLevel:NSScreenSaverWindowLevel];
-				[strip orderWindow:NSWindowAbove relativeTo:[[stars window] windowNumber]];
-				
-				// create a
-				NSRect stripRect = NSMakeRect(0.0, (NSHeight([[[NSScreen screens] objectAtIndex:0] frame]) / 2 - 103.0), NSWidth([[[NSScreen screens] objectAtIndex:0] frame]), 206.0);
-				
-				[strip setFrame:stripRect display:YES];
-				[strip makeKeyAndOrderFront:self];
-				[strip setAlphaValue:1.0];
-                
 				// play sound
 				[mySound play];
-				
-				//play movie
-                [stars setFrame:NSMakeRect(0.0, 0.0,
-                                           NSWidth([[[NSScreen screens] objectAtIndex:0] frame]),
-                                           NSHeight([[[NSScreen screens] objectAtIndex:0] frame]))];
                 
                 [stars.player seekToTime:CMTimeMakeWithSeconds(0.0f, NSEC_PER_SEC) toleranceBefore: kCMTimeZero toleranceAfter: kCMTimeZero];
                 
+                [self setupAnimationWindowWithHidden:NO];
+                
 				[stars.player play];
+                
 			}
 		}
     }
@@ -123,7 +144,13 @@
 
     myMoviePlayer = [[AVPlayer alloc] initWithURL:
                      [NSURL fileURLWithPath: pathToMovie]];
-	
+    
+    self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:myMoviePlayer];
+    [stars setWantsLayer:YES];
+    [stars.layer addSublayer:self.playerLayer];
+    [self.playerLayer setVideoGravity:AVLayerVideoGravityResizeAspectFill];
+
+    
 	// set movie to movie view
     stars.player = myMoviePlayer;
     
@@ -133,7 +160,10 @@
 	[strip orderWindow:NSWindowAbove relativeTo:[[stars window] windowNumber]];
 	
     [_window makeKeyAndOrderFront:self];
-	return;
+	
+    [self setupAnimationWindowWithHidden:YES];
+    
+    return;
 }
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)sender
