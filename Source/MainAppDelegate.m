@@ -19,20 +19,17 @@
 - (IBAction)runEffect:(id)sender
 {
 	// get a list of the applications currently launched
-	NSArray *newCurrentApps = [[NSWorkspace sharedWorkspace] launchedApplications];
+	NSArray *runningApps = [[NSWorkspace sharedWorkspace] runningApplications];
 	
-	// compare it to the previous listing to find the "new" app in the list
-	NSEnumerator *e = [newCurrentApps objectEnumerator];
-	id someApp;
-	while ( (someApp = [e nextObject]) ) {
-		if (![currentApps containsObject:someApp]) {
+    for (NSRunningApplication *app in runningApps) {
+        if (![currentApps containsObject:app]) {
 			if ([_checkbox state] == NSOnState) {
-
+                
 				// set label to app name
-				[appName setStringValue:[someApp valueForKey:@"NSApplicationName"]];
+				[appName setStringValue:[app localizedName]];
 				
 				// create new NSImage from that app's icon
-				NSImage *icon = [[NSWorkspace sharedWorkspace] iconForFile:[someApp valueForKey:@"NSApplicationPath"]];
+				NSImage *icon = [app icon];
 				[icon setSize:NSMakeSize(128.0,128.0)];
 				
 				[iconView setImage: icon];
@@ -67,8 +64,9 @@
 				[stars.player play];
 			}
 		}
-	}
-	currentApps = newCurrentApps;
+    }
+    
+	currentApps = runningApps;
 }
 
 - (void)endEffect
@@ -108,7 +106,7 @@
 	notCenter = [[NSWorkspace sharedWorkspace] notificationCenter];
 	
 	// get a list of all currently running applications
-	currentApps = [[NSWorkspace sharedWorkspace] launchedApplications];
+	currentApps = [[NSWorkspace sharedWorkspace] runningApplications];
 	
 	// sign up for notifications when applications launch
 	[notCenter addObserver:self

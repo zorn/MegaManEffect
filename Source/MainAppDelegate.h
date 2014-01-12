@@ -2,7 +2,7 @@
 #import <AVFoundation/AVPlayer.h>
 #import <AVKit/AVPlayerView.h>
 
-@interface MainAppDelegate : NSObject <NSApplicationDelegate>
+@interface MainAppDelegate : NSObject <NSApplicationDelegate, NSSoundDelegate>
 {
     IBOutlet NSTextField *appName;
 	IBOutlet NSImageView *iconView;
