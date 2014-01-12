@@ -68,14 +68,16 @@
         <window title="Mega Man Effect" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="258" height="36"/>
+            <rect key="contentRect" x="227" y="1161" width="249" height="54"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <value key="minSize" type="size" width="249" height="54"/>
+            <value key="maxSize" type="size" width="249" height="54"/>
             <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="258" height="36"/>
+                <rect key="frame" x="0.0" y="0.0" width="249" height="54"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1AZ-iO-3q2">
-                        <rect key="frame" x="23" y="13" width="213" height="18"/>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="1AZ-iO-3q2">
+                        <rect key="frame" x="18" y="18" width="213" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="check" title="Turn on the &quot;Mega Man Effect&quot;" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="bx7-hA-2rw">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -83,6 +85,10 @@
                         </buttonCell>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="1AZ-iO-3q2" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" id="4i9-aK-YCY"/>
+                    <constraint firstItem="1AZ-iO-3q2" firstAttribute="top" secondItem="372" secondAttribute="top" constant="20" id="XvE-Hg-aJb"/>
+                </constraints>
             </view>
         </window>
         <customObject id="494" customClass="MainAppDelegate">
@@ -106,7 +112,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <avPlayerView fixedFrame="YES" controlsStyle="none" translatesAutoresizingMaskIntoConstraints="NO" id="di8-ro-zL9">
-                        <rect key="frame" x="0.0" y="-23" width="480" height="293"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </avPlayerView>
                 </subviews>
