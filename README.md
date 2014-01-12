@@ -14,4 +14,4 @@ For awhile after various personal site redesigns,  the MegaManEffect download pa
 
 The source for MegaManEffect is available under a BSD license.
 
-While the app binary still works, the code itself isn't terribly good. It was written as I was still learning Cocoa (2004) and currently doesn't build under 10.9 but I'm going to archive it here for now anyways.
+While the app binary still works, the code itself isn't terribly "good". It was written as I was still learning Cocoa (2004).
